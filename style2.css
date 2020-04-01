@@ -1,0 +1,63 @@
+.background-1{
+    background-color: #cbd3da;
+}
+.col-main{
+    margin-top: 30px;
+    background-color: #c69500;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px;
+}
+
+.split {
+    margin-top: 80px;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: auto;
+    padding-top: 20px;
+}
+
+.left {
+    width:50%;
+    left: 0;
+    background-color: #cbd3da;
+}
+
+.right {
+    width: 50%;
+    right: 0;
+    margin-left: 10px;
+    background-color: #494f54;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.groove {border-style: groove;
+    border-top-width: thin;
+    border-bottom-width: thin;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    margin-left: 0px;
+}
+.last-name-male-col{
+    margin-left: -15px;
+}
+.nationality-loc{
+    margin-top: 10px;
+}
+.text-colour-f{
+    color: #b1dfbb;
+}
