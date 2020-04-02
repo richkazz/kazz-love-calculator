@@ -22,9 +22,9 @@
     //let Averagesexf = document.getElementById("Average-sex-f").value;
     //let Goodsexf = document.getElementById("Good-sex-f").value;
      //next section is to split the value gotten from the input
-     if( document.getElementById('None-sex').checked){
-         none_sex = document.getElementById('None-sex').value;
-     }
+     //if( document.getElementById('None-sex').checked){
+       //  none_sex = document.getElementById('None-sex').value;
+     //}
      var splitfirstnamemale = firstnamemale.split("");
      var addsplitfirstnamemale = 0;
      var lenfirstnamemale = splitfirstnamemale.length;
@@ -116,7 +116,7 @@
          addsplitnationalityf += parseInt( splitnationalityf[nationalityfi])
      }
      //to check if input on boh date is the same but if it is not the same return
-     if (addsplitfirstnamemale > 0, addsplitdatemale === addsplitdatefemale, addsplitfirstnamemale > 0){
+     if (addsplitfirstnamemale > 0 ){
          
      }
      else if(addsplitfirstnamemale === 0 ){
@@ -125,12 +125,18 @@
          document.getElementById("correct-firstnamemale").innerHTML= checkaddsplitfirstnamemale;
          return checkaddsplitfirstnamemale;
      }
+         if ( addsplitfirstnamefemale > 0){
+             
+         }
     
      else if(addsplitfirstnamefemale === 0 ){
          var asd = "input correct name";
          document.getElementById("firstname_female").innerHTML= asd;
          return asd;
      }
+         if (addsplitdatemale === addsplitdatefemale ){
+             
+         }
      else if(addsplitdatemale < addsplitdatefemale ){
          var checkaddsplitdatemale = "input correct date";
          document.getElementById("correct-input1").innerHTML= checkaddsplitdatemale;
@@ -144,15 +150,62 @@
          return checkaddsplitdatemale1;
      }
     
-     let male_array = []
-        male_array.push(addsplitfirstnamemale,addsplitlastnamemale,addsplitdatemale,addsplitskincolourmale,addspliteducationmale,addsplitnationalitymale )
-     let female_array = []
-     female_array.push(addsplitfirstnamefemale,addsplitlastnamefemale,addsplitdatefemale,addsplitskincolourf,addspliteducationf,addsplitnationalityf)
+     let male_array = [];
+        male_array.push(addsplitfirstnamemale,addsplitlastnamemale,addsplitdatemale,addsplitskincolourmale,addspliteducationmale,addsplitnationalitymale );
+     let female_array = [];
+     female_array.push(addsplitfirstnamefemale,addsplitlastnamefemale,addsplitdatefemale,addsplitskincolourf,addspliteducationf,addsplitnationalityf);
     let male_female = male_array[0] + female_array[5];
      let male_female1 = male_array[1] - female_array[4];
-     let male_female2 = male_array[2] * female_array[3];
-    let male_female3 = male_array[3] % female_array[2];
+     let male_female2 = male_array[2] + female_array[3];
+    let male_female3 = male_array[3] - female_array[2];
     let male_female4 = male_array[4] + female_array[1];
      let male_female5 = male_array[5] - female_array[0];
- 
+     let male_female_array = [];
+     male_female_array.push(male_female,male_female1,male_female2,male_female3,male_female4,male_female5);
+     var lenmale_female_array1 = male_female_array.length;
+    let addmale_female_array1 = 0;
+     for (var male_female_arrayi = 0; male_female_arrayi < lenmale_female_array1; male_female_arrayi++){
+         addmale_female_array1 += parseInt( male_female_array[male_female_arrayi])
+     }
+     let kazz_calculator = "you do not match on any possible level";
+     let kazz_calculator1 = "there is a 50-50 chance of the relationship going both ways";
+     let kazz_calculator2 = "you are a match";
+     let kazz_calculator3 = "perfect march";
+     let kazz_calculator4 = "only a miracle would make the relationship";
+     let kazz_calculator5 = "the risk of break-up is greater than 80% ";
+     let kazz_calculator6 = "blessed by GOD";
+
+     let total = ( addmale_female_array1/20000)*100;
+     if (total  < 1 ){
+         document.getElementById('total_p').innerHTML= kazz_calculator;
+         return kazz_calculator;
+     }
+
+ else if (total >=1 && total < 20){
+         document.getElementById('total_p').innerHTML= kazz_calculator4;
+         return kazz_calculator4;
+     }
+     else if (total => 20 && total < 40 ){
+         document.getElementById('total_p').innerHTML= kazz_calculator5;
+         return kazz_calculator5;
+     }
+     else if (total => 40 && total < 60 ){
+         document.getElementById('total_p').innerHTML= kazz_calculator1;
+         return kazz_calculator1;
+     }
+     else if (total => 60 && total < 80 ){
+         document.getElementById('total_p').innerHTML= kazz_calculator2;
+         return kazz_calculator2;
+     }
+     else if (total => 80 && total < 99 ){
+         document.getElementById('total_p').innerHTML= kazz_calculator3;
+         return kazz_calculator3;
+     }
+     else if (total => 99 && total < 100 ){
+         document.getElementById('total_p').innerHTML= kazz_calculator6;
+         return kazz_calculator6;
+     }
+     
+
+
  }
