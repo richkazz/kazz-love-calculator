@@ -115,9 +115,16 @@
          splitnationalityf[nationalityfi] = nationalityf.charCodeAt(nationalityfi);
          addsplitnationalityf -= parseInt( splitnationalityf[nationalityfi])
      }
-
+     //to check if input on boh date is the same but if it is not the same return
+    if (addsplitdatemale < addsplitdatefemale ){
+        return getnamemale();
+    }
+    else if ( addsplitdatemale > addsplitdatefemale){
+        return getnamemale();
+    }alert("check date")
      let male_array = []
         male_array.push(addsplitfirstnamemale,addsplitlastnamemale,addsplitdatemale,addsplitskincolourmale,addspliteducationmale,addsplitnationalitymale )
      let female_array = []
      female_array.push(addsplitfirstnamefemale,addsplitlastnamefemale,addsplitdatefemale,addsplitskincolourf,addspliteducationf,addsplitnationalityf)
 }
+alert("rat")
