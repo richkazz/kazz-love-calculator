@@ -14,7 +14,8 @@
 
 .split {
     margin-top: 80px;
-    height: 100%;
+    margin-bottom: 40px;
+    height: 80%;
     width: 50%;
     position: fixed;
     z-index: 1;
