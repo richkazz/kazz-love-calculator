@@ -6,8 +6,12 @@
           <option name="url" value="https://github.com/richkazz/menu-with-drop-down" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@github.com:richkazz/menu-with-drop-down.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="C:\karo" />
+    <option name="cloneParentDir" value="C:\Michael" />
   </component>
 </application>
