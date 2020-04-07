@@ -10,8 +10,12 @@
           <option name="url" value="git@github.com:richkazz/menu-with-drop-down.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/richkazz/first-game" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="C:\Michael" />
+    <option name="cloneParentDir" value="C:\karo\kazz first game" />
   </component>
 </application>
